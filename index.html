@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="login-container" id="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="error" id="errorMessage"></div>
+    </div>
+    <div class="post-container" id="post-container">
+        <ul class="flex">
+            <li onclick="showPosts('timeline')">Time Line</li>
+            <li onclick="showPosts('profile')">Profile</li>
+        </ul>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

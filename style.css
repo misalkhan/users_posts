@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    display: block;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 93%;
+    margin: auto;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.login-container .error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.post-container {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60vw;
+    margin-bottom: 20px;
+    display: none;
+    min-height: auto; 
+    overflow: visible; 
+}
+
+
+.flex {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #0056b3;
+    position: relative;
+    z-index: 11;
+
+}
+
+.flex li {
+    width: 50%;
+    text-align: center;
+    padding: 5px 0px;
+    cursor: pointer;
+    color: #fff;
+}
+.flex li:hover{
+    color:orange;
+    font-size: 24px;
+}
+
+.post-div{
+    width: 400px;
+    min-height: 150px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.content{
+    width: 100%;
+    min-height: 100px;
+    font-size: 17px;
+}
+
+.action-div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.likes, #comments{
+    background-color: transparent;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 40%;
+}
+.liked {
+    background-color: #007BFF; 
+    color: #fff; 
+}
+
+
+#post-comment{
+    width: 50%;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    padding:  10px ;
+}
+
+#post-btn{
+    background-color: #007BFF;
+    border: none;
+    color: #fff;
+    padding: 5px 20px;
+    width: 30%;
+    border-radius: 10px;
+}
